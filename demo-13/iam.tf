@@ -6,7 +6,7 @@ resource "aws_iam_group" "administrators" {
 resource "aws_iam_policy_attachment" "administrators-attach" {
   name       = "administrators-attach"
   groups     = [aws_iam_group.administrators.name]
-  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonAPIGatewayAdministrator"
 }
 
 # user
